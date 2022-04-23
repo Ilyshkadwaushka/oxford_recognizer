@@ -8,7 +8,7 @@ export default {
             state.original_text = original_text.split(" ");
             state.recognized_text = [];
             for (let i = 0; i < state.original_text.length; i++) {
-                if (dictionaryData.find(element => element == state.original_text[i])) {
+                if (dictionaryData.find(element => element == state.original_text[i].toLowerCase())) {
                     state.recognized_text.push([state.original_text[i], 1])
                 } else {
                     state.recognized_text.push([state.original_text[i], 0])
