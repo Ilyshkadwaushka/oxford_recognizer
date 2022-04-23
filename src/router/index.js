@@ -5,7 +5,7 @@ const router = createRouter({
    history: createWebHistory(),
    routes: [
       {
-         path: '/',
+         path: '/oxford_recognizer/',
          component: Landing,
          /*
          meta: {
